@@ -1,0 +1,2 @@
+recursive-include streamlit_nlp_annotator/frontend/build *
+include pyproject.toml

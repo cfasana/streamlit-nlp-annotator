@@ -1,0 +1,6 @@
+__pycache__/
+streamlit_nlp_annotator.egg-info/
+dist/
+build/
+node_modules/
+.annotator/
