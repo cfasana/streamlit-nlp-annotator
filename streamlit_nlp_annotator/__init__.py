@@ -2,7 +2,7 @@ import streamlit as st
 from typing import Any, TypedDict, List, Iterable
 
 out = st.components.v2.component(
-    "streamlit-nlp-annotator.streamlit_nlp_annotator",
+    "streamlit_nlp_annotator",
     js="index-*.js",
     css="index-*.css",
     html='<div class="react-root"></div>',
