@@ -40,6 +40,7 @@ devel = [
 ]
 
 [tool.setuptools]
+packages = ["streamlit_nlp_annotator"]
 include-package-data = true
 
 [tool.setuptools.packages.find]
@@ -49,4 +50,16 @@ include = ["streamlit_nlp_annotator*"]
 streamlit_nlp_annotator = [
   "frontend/build/**/*",
   "pyproject.toml",
+]
+
+[tool.setuptools.exclude-package-data]
+streamlit_nlp_annotator = [
+    "frontend/node_modules/**/*",
+    "frontend/src/**/*",
+    "frontend/package-lock.json",
+    "frontend/package.json",
+    "frontend/tsconfig.json",
+    "frontend/vite.config.ts",
+    "frontend/vitest.config.ts",
+    "frontend/.gitignore",
 ]
