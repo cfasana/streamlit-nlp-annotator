@@ -43,9 +43,6 @@ devel = [
 packages = ["streamlit_nlp_annotator"]
 include-package-data = true
 
-[tool.setuptools.packages.find]
-include = ["streamlit_nlp_annotator*"]
-
 [tool.setuptools.package-data]
 streamlit_nlp_annotator = [
   "frontend/build/**/*",
