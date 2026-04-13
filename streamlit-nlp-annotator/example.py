@@ -28,7 +28,11 @@ customPalette = {
 st.header("Streamlit NLP Annotator")
 st.subheader("Annotator with default color palette and fixed labels")
 default_result = annotate_text(text = text, labels=default_labels, allow_runtime_labels=False, key="nlp-annotator-default")
+with st.expander("Annotations:"):
+    st.write(default_result)
 
 st.subheader("Annotator with custom color palette and runtime labels")
 
 custom_result = annotate_text(text = text, labels=default_labels[:-1], allow_runtime_labels=True, colorPalette = customPalette, key="nlp-annotator-custom")
+with st.expander("Annotations:"):
+    st.write(custom_result)
