@@ -28,7 +28,7 @@ Unlike existing tools, `streamlit-nlp-annotator` allows a clean inline visualiza
 ## 🎬 Demo
 
 ### Live App
-👉 TODO
+👉 Test it [here](https://nlp-annotator.streamlit.app/)
 
 ### Preview
 
