@@ -1,0 +1,8 @@
+# Ship a minimal metadata file that can be picked up by Streamlit at runtime.
+[project]
+name = "streamlit-nlp-annotator"
+version = "1.0.0"
+
+[[tool.streamlit.component.components]]
+name = "streamlit_nlp_annotator"
+asset_dir = "frontend/build"
