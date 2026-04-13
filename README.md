@@ -1,4 +1,8 @@
 # streamlit-nlp-annotator
+[![PyPI version](https://img.shields.io/pypi/v/streamlit-nlp-annotator.svg)](https://pypi.org/project/streamlit-nlp-annotator/)
+[![Python](https://img.shields.io/pypi/pyversions/streamlit-nlp-annotator.svg)](https://pypi.org/project/streamlit-nlp-annotator/)
+
+
 `streamlit-nlp-annotator` is a Streamlit component for interactive text annotation. This is especially useful for Natural Language Processing (NLP) tasks.
 
 This component was inspired by the following works:
@@ -7,6 +11,7 @@ This component was inspired by the following works:
 - [streamlit-annotation-tools](https://github.com/rmarquet21/streamlit-annotation-tools) by [@rmarquet21](https://github.com/rmarquet21)
 
 Unlike existing tools, `streamlit-nlp-annotator` allows a clean inline visualization of annotations.
+
 
 ## 👀 Features
 
@@ -17,39 +22,95 @@ Unlike existing tools, `streamlit-nlp-annotator` allows a clean inline visualiza
 - Deterministic color mapping
 - JSON-compatible output format
 - Supports controlled label sets
+- Optional runtime label creation
+- Light/dark theme support
 
-## ⚙️ Installation
+## 🎬 Demo
+
+### Live App
+👉 TODO
+
+### Preview
+
+<p align="center">
+  <img src="assets/default_colors_and_labels.gif" width="45%" />
+  <img src="assets/custom_colors_and_labels.gif" width="45%" />
+</p>
+<p align="center">
+  <img src="assets/annotations_and_labels_deletion.gif" width="45%" />
+
+</p>
+
+## 🛠️ Installation
 
 ```bash
 pip install streamlit-nlp-annotator
 ```
 
-## Output format
 
-The component returns a list of annotations.
-
-```python
-[
-  {
-    "start": 21,
-    "end": 27,
-    "text": "Zurich",
-    "label": "city",
-  }
-]
-```
-
-## 🚀 Usage example
-
+## 🚀 Quick Start
 ```python
 import streamlit as st
 from streamlit_nlp_annotator import annotate_text
 
-text = "Book a flight from Zurich to Paris tomorrow"
+text = "John McCarthy was born on September 4, 1927."
 
-annotations = annotate_text(
+result = annotate_text(
     text=text,
-    labels=["city", "date"],
+    labels=["Name", "Date"],
+    allow_runtime_labels=True,
+    key="example",
 )
 
-st.write(annotations)
+st.write(result)
+```
+
+## 💾 Output Format
+
+The component returns a dictionary-like structure:
+```json
+{
+    "annotations": [
+        {
+            "id": "...",
+            "start": 0,
+            "end": 3,
+            "label": "Name",
+            "text": "John"
+        }
+    ],
+    "labels": ["Name", "Date"],
+    "selection": {
+        "start": 26,
+        "end": 42,
+        "text": "September 4, 1927"
+    }
+}
+```
+
+The above example shows the output when one part of the text has already been annotated, and another text portion has only been selected. The list of available labels is also provided.
+
+
+## ⚙️ API
+```python
+annotate_text(
+    text: str,                              # Source text to annotate
+    labels: list[str] | None = None,        # Initial list of labels
+    annotations: list[dict] | None = None,  # Initial annotations
+    allow_runtime_labels: bool = True,      # Allow users to add/remove labels
+    readonly: bool = False,                 # Disable editing
+    colorPalette: dict | None = None,       # Optional custom color palette
+    themeMode: str = "light",               # "light" or "dark"
+    key: str | None = None,                 # Streamlit key for persistence
+)
+```
+
+## ✅ Example App
+
+```bash
+streamlit run example.py
+```
+
+## License
+
+MIT License
