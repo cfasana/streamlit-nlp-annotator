@@ -52,7 +52,7 @@ def _get_component_state(key: str | None) -> dict[str, Any] | None:
 
 
 
-def annotate_text(
+def streamlit_nlp_annotator(
     *,
     text: str,
     labels: Iterable[str] | None = None,
