@@ -1,6 +1,6 @@
 [project]
 name = "streamlit-nlp-annotator"
-version = "1.0.0"
+version = "1.0.2"
 
 [[tool.streamlit.component.components]]
 name = "streamlit_nlp_annotator"

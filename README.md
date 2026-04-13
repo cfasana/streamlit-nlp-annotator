@@ -1,5 +1,5 @@
 # streamlit-nlp-annotator
-[![PyPI version](https://img.shields.io/pypi/v/streamlit-nlp-annotator.svg)](https://pypi.org/project/streamlit-nlp-annotator/)
+[![PyPI version](https://img.shields.io/pypi/v/streamlit-nlp-annotator)](https://pypi.org/project/streamlit-nlp-annotator/)
 
 `streamlit-nlp-annotator` is a Streamlit component for interactive text annotation. This is especially useful for Natural Language Processing (NLP) tasks.
 
