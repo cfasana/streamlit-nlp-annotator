@@ -51,11 +51,11 @@ pip install streamlit-nlp-annotator
 ## 🚀 Quick Start
 ```python
 import streamlit as st
-from streamlit_nlp_annotator import streamlit_nlp_annotator
+from streamlit_nlp_annotator import annotate_text
 
 text = "John McCarthy was born on September 4, 1927."
 
-result = streamlit_nlp_annotator(
+result = annotate_text(
     text=text,
     labels=["Name", "Date"],
     allow_runtime_labels=True,
@@ -93,7 +93,7 @@ The above example shows the output when one part of the text has already been an
 
 ## ⚙️ API
 ```python
-streamlit_nlp_annotator(
+annotate_text(
     text: str,                              # Source text to annotate
     labels: list[str] | None = None,        # Initial list of labels
     annotations: list[dict] | None = None,  # Initial annotations
