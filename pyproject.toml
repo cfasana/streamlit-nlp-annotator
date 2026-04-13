@@ -21,7 +21,6 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Operating System :: OS Independent",
-  "Framework :: Streamlit",
 ]
 
 [project.urls]

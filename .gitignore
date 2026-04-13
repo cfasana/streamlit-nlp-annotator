@@ -4,3 +4,4 @@ dist/
 node_modules/
 .annotator/
 .venv
+test-env/
