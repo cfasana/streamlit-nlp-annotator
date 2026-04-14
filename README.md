@@ -98,7 +98,6 @@ annotate_text(
     allow_runtime_labels: bool = True,      # Allow users to add/remove labels
     readonly: bool = False,                 # Disable editing
     colorPalette: dict | None = None,       # Optional custom color palette
-    themeMode: str = "light",               # "light" or "dark"
     key: str | None = None,                 # Streamlit key for persistence
 )
 ```
