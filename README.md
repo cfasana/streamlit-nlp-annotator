@@ -31,11 +31,11 @@ Unlike existing tools, `streamlit-nlp-annotator` allows a clean inline visualiza
 ### Preview
 
 <p align="center">
-  <img src="assets/default_colors_and_labels.gif" width="45%" />
-  <img src="assets/custom_colors_and_labels.gif" width="45%" />
+  <img src="https://raw.githubusercontent.com/cfasana/streamlit-nlp-annotator/main/assets/default_colors_and_labels.gif" width="45%" />
+  <img src="https://raw.githubusercontent.com/cfasana/streamlit-nlp-annotator/main/assets/custom_colors_and_labels.gif" width="45%" />
 </p>
 <p align="center">
-  <img src="assets/annotations_and_labels_deletion.gif" width="45%" />
+  <img src="https://raw.githubusercontent.com/cfasana/streamlit-nlp-annotator/main/assets/annotations_and_labels_deletion.gif" width="45%" />
 
 </p>
 

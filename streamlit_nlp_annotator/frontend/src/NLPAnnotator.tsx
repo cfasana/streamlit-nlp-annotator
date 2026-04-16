@@ -56,7 +56,7 @@ const NLPAnnotator: FC<Props> = ({
   readonly,
   setStateValue,
   colorPalette,
-  themeMode,
+  themeMode
 }): ReactElement => {
   const [annotations, setAnnotations] = useState<Annotation[]>(
     normalizeAnnotations(text, initialAnnotations)
@@ -476,8 +476,6 @@ const NLPAnnotator: FC<Props> = ({
 
   return (
     <div ref={rootRef} className="nlp-annotator">
-      <h3 className="nlp-annotator__section-title">Labels</h3>
-
       {allow_runtime_labels && (
         <div className="nlp-annotator__label-controls">
           <input

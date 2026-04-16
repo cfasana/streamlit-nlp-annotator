@@ -41,7 +41,7 @@ any, any> = (args) => {
   }
 
   // Access the data passed from Streamlit on the Python side.
-  const { text, labels, annotations, allow_runtime_labels, readonly, colorPalette, themeMode } = data;
+  const { text, labels, annotations, allow_runtime_labels, readonly, colorPalette, themeMode} = data;
 
   // Render the NLPAnnotator component within the React root.
   reactRoot.render(
