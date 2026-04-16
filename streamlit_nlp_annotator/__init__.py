@@ -1,5 +1,5 @@
 import streamlit as st
-from typing import Any, TypedDict, List, Iterable
+from typing import Any, Callable, TypedDict, List, Iterable
 
 out = st.components.v2.component(
     name="streamlit-nlp-annotator.streamlit_nlp_annotator",

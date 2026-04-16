@@ -73,8 +73,6 @@ const AnnotatedText: FC<AnnotatedTextProps> = ({
 }): ReactElement => {
   return (
     <div className="nlp-annotator__text-section">
-      <h3 className="nlp-annotator__section-title">Text</h3>
-
       <div
         ref={containerRef}
         onMouseUp={onMouseUp}

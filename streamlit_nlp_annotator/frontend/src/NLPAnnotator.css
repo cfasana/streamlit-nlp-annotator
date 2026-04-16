@@ -15,9 +15,6 @@
   --na-heading: var(--st-heading-color, var(--na-text));
   --na-bg: var(--st-background-color);
   --na-surface: var(--st-secondary-background-color);
-  --na-border: color-mix(in srgb, var(--na-text) 16%, transparent);
-  --na-border-light: color-mix(in srgb, var(--na-text) 10%, transparent);
-  --na-widget-border: color-mix(in srgb, var(--st-primary-color) 30%, var(--na-surface));
   --na-primary: var(--st-primary-color);
   --na-link: var(--st-primary-color);
   --na-radius: var(--st-base-radius, 0.75rem);
@@ -77,6 +74,9 @@
   margin-bottom: 1rem;
   flex-wrap: wrap;
   align-items: center;
+  --na-border: color-mix(in srgb, var(--na-text) 16%, transparent);
+  --na-border-light: color-mix(in srgb, var(--na-text) 10%, transparent);
+  --na-widget-border: color-mix(in srgb, var(--st-primary-color) 30%, var(--na-surface));
 }
 
 .nlp-annotator__input,
@@ -183,6 +183,9 @@
 
 .nlp-annotator__text-section {
   margin-top: 1.5rem;
+  --na-border: color-mix(in srgb, var(--na-text) 16%, transparent);
+  --na-border-light: color-mix(in srgb, var(--na-text) 10%, transparent);
+  --na-widget-border: color-mix(in srgb, var(--st-primary-color) 30%, var(--na-surface));
 }
 
 .nlp-annotator__text-container {
